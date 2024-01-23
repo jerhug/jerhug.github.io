@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+body
+ {
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(0,18,25);
+    background: #EDAE49;
+    overflow: hidden;
+    height: 400%;
+    overflow: scroll;
+  }
+
+
+  
+.name {
+
+    color: #E9D8A6;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);;
+    font-size: 5em;
+    vertical-align: middle;
+    margin: auto;
+    display: inline-block;
+    height: 25%;
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+.area{    
+    display: inline-block;
+    background: #353535;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 90%;
+    margin-left: 10%;
+    height:300vh;
+}
+
+div {
+    float: left;
+}
+
+.leftmenu {
+    background: #585858;  
+    width: 10%;
+    margin-right: 90%;
+    height:100vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: #E9D8A6;
+    --text-shadow: 2px 2px 5px #F48C06;
+    margin-left: 25px;
+}
+
+p {
+    color: white;
+    margin-left: 25px;
+}
