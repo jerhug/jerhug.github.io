@@ -1,0 +1,84 @@
+.sidebar {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+
+  .menuitem {
+    text-decoration: none;
+    text-align: right;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #c53636;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menuitem:hover {
+    background-color: #444;
+  }
+  
+  .menuitem a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: right;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menuitem h1 {
+    display: inline;
+    text-decoration: none;
+    text-align: left;
+    line-height: 50px;
+    margin-left: 60px;
+
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menuitem img {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .openbtn {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #togglebutton {
+    transition: margin-left .5s;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

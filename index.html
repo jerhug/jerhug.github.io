@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="stylesheet" href="css/mainstyle.css">
+        <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/sidemenu.css">
+</head>
+
+<body>
+
+        <div id="mySidebar" class="sidebar">
+
+                <div id="togglebutton">
+                        <button class="openbtn" onclick="ToggleNav()">☰</button>
+                </div>
+
+                <div class="menuitem">
+                        <a href=index.html><img class=icon
+                                        src="icons/info.png"></img>
+                                <h1>About</h1>
+                        </a>
+                </div>
+                <div class="menuitem">
+                        <a href=portfolio.html><img class=icon
+                                        src="icons/code.png"></img>
+                                <h1>Portfolio</h1>
+                        </a>
+                </div>
+                <div class="menuitem">
+                        <a href=resume.html><img class=icon
+                                        src="icons/briefcase.png"></img>
+                                <h1>Resume</h1>
+                        </a>
+                </div>
+                <div class="menuitem">
+                        <a href=contact.html><img class=icon
+                                        src="icons/phone.png"></img>
+                                <h1>Contact</h1>
+                        </a>
+                </div>
+        </div>
+
+        <script>
+
+                var isOpen = false;
+                function ToggleNav() {
+                        if (!isOpen) {
+                                isOpen = true;
+                                document.getElementById("mySidebar").style.width = "200px";
+                                document.getElementById("togglebutton").style.marginLeft = "150px";
+                                document.getElementById("maincontent").style.marginLeft = "200px";
+                        }
+                        else {
+                                isOpen = false;
+                                document.getElementById("mySidebar").style.width = "50px";
+                                document.getElementById("togglebutton").style.marginLeft = "0px";
+                                document.getElementById("maincontent").style.marginLeft = "50px";
+                        }
+                }
+
+        </script>
+
+        <div id="maincontent" class="maincontent">
+
+                <h1 class="name">Jeremy Hug</h1>
+
+                <div class="infopanel">
+                        <h1>About</h1>
+                        <p1>I am currently a software engineer at Lockheed Martin! My main responsibilities include creating reliable code, debugging other's code, and developing new features for a series of in-house VR and AR applications.</p1>
+                </div>
+
+                <div class="infopanel">
+                        <h1>Schooling</h1>
+                        <p1>Western Colorado University - Graduated December 2023</p1>
+                        <br>
+                        <p1>-Bachelors in Computer Science w/ an emphasis in Software Engineering</p1>
+                </div>
+
+                <div class="infopanel">
+                        <h1>Professional Experience</h1>
+                        <p1>Software Engineer with a history of Game Development</p1>
+                </div>
+
+        </div>
+
+</body>
+
+</html>
