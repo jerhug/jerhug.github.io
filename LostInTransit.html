@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="stylesheet" href="css/mainstyle.css">
+        <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/sidemenu.css">
+</head>
+
+<body>
+
+        <div id="mySidebar" class="sidebar">
+
+                <div id="togglebutton">
+                        <button class="openbtn" onclick="ToggleNav()">☰</button>
+                </div>
+
+                <div class="menuitem">
+                        <a href=index.html><img class=icon
+                                        src="icons/info.png"></img>
+                                <h1>About</h1>
+                        </a>
+                </div>
+                <div class="menuitem">
+                        <a href=portfolio.html><img class=icon
+                                        src="icons/code.png"></img>
+                                <h1>Portfolio</h1>
+                        </a>
+                </div>
+                <div class="menuitem">
+                        <a href=resume.html><img class=icon
+                                        src="icons/briefcase.png"></img>
+                                <h1>Resume</h1>
+                        </a>
+                </div>
+                <div class="menuitem">
+                        <a href=contact.html><img class=icon
+                                        src="icons/phone.png"></img>
+                                <h1>Contact</h1>
+                        </a>
+                </div>
+        </div>
+
+        <script>
+
+                var isOpen = false;
+                function ToggleNav() {
+                        if (!isOpen) {
+                                isOpen = true;
+                                document.getElementById("mySidebar").style.width = "200px";
+                                document.getElementById("togglebutton").style.marginLeft = "150px";
+                                document.getElementById("maincontent").style.marginLeft = "200px";
+                        }
+                        else {
+                                isOpen = false;
+                                document.getElementById("mySidebar").style.width = "50px";
+                                document.getElementById("togglebutton").style.marginLeft = "0px";
+                                document.getElementById("maincontent").style.marginLeft = "50px";
+                        }
+                }
+
+        </script>
+
+        <div id="maincontent" class="maincontent">
+
+                <h1 class="name">Lost In Transit</h1>
+
+                <div class="infopanel">
+                        <h1>About</h1>
+                        <p1>Lost In Transit is an upcoming logistics puzzle game I am developing!</p1>
+                </div>
+        </div>
+
+</body>
+
+</html>
